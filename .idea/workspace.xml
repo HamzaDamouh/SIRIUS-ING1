@@ -21,7 +21,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -54,6 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "19",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/lenovo/Desktop/sirius/prototype-ing1",
@@ -192,6 +193,7 @@
       <workItem from="1714116012863" duration="473000" />
       <workItem from="1714116548227" duration="5337000" />
       <workItem from="1714123165627" duration="350000" />
+      <workItem from="1714129482351" duration="919000" />
     </task>
     <servers />
   </component>
@@ -231,11 +233,6 @@
           <url>file://$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/SelectUser.java</url>
           <line>27</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xmart-city-backend/src/main/java/edu/ezip/ing1/pds/backend/MainBackendServer.java</url>
-          <line>5</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

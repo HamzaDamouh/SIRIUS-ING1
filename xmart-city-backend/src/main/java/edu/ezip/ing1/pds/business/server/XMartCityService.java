@@ -23,7 +23,19 @@ public class XMartCityService {
         SELECT_ALL("SELECT * FROM \"ezip-ing1\".users t"),
         SELECT_ALL_Student("SELECT * FROM \"ezip-ing1\".students t"),
         SELECT_ALL_Recipe("SELECT * FROM \"ezip-ing1\".recipes t"),
-
+        SELECT_RecipeOfDay("\n" +
+                " SELECT * \n"+
+                "  FROM \"ezip-ing1\".recipes \n" +
+                "  WHERE breakfast = 'true'\n" +
+                "  LIMIT 1\n" +
+                ")\n" +
+                "UNION ALL\n" +
+                "(\n" +
+                "  SELECT * \n" +
+                "  FROM \"ezip-ing1\".recipes \n" +
+                "  WHERE breakfast != 'true'\n" +
+                "  LIMIT 2\n" +
+                ");"),
         INSERT_USER("INSERT into \"ezip-ing1\".users (\"lastname\", \"firstname\", \"email\", \"gender\", \"age\", \"height\", \"weight\") values (?, ?, ?,?, ?, ?, ?)"),
         INSERT_STUDENT("INSERT into \"ezip-ing1\".students (\"name\", \"firstname\", \"group\") values (?, ?, ?)"),
         INSERT_RECIPE("INSERT into \"ezip-ing1\".recipes (\"name\", \"ingredients\", \"calories\",\"breakfast\") values (?, ?, ?, ?)");
@@ -73,6 +85,7 @@ public class XMartCityService {
             PreparedStatement selectStatement = connection.prepareStatement(Queries.SELECT_ALL_Recipe.query);
             ResultSet resultSet = selectStatement.executeQuery();
 
+
             Recipes recipes = new Recipes();
 
             while (resultSet.next()) {
@@ -92,6 +105,30 @@ public class XMartCityService {
         }
     }
 
+    public Response selectRecipeOfDay(final Request request, final Connection connection){
+        try {
+            PreparedStatement selectStatement = connection.prepareStatement(Queries.SELECT_RecipeOfDay.query);
+            ResultSet resultSet = selectStatement.executeQuery();
+
+
+            Recipes recipes = new Recipes();
+
+            while (resultSet.next()) {
+                Recipe recipe = new Recipe();
+                recipe.build(resultSet);
+                recipes.add(recipe);
+            }
+
+            // Mapper users en JSON
+            ObjectMapper objectMapper = new ObjectMapper();
+            String responseBody = objectMapper.writeValueAsString(recipes);
+
+            return new Response(request.getRequestId(), responseBody);
+        } catch (Exception e) {
+            logger.error("Error executing SELECT_ALL_Recipe: {}", e.getMessage());
+            return new Response(request.getRequestId(), "Error executing SELECT_ALL query");
+        }
+    }
 
     public Response selectAllUsers(final Request request, final Connection connection) {
         try {
@@ -205,6 +242,9 @@ public class XMartCityService {
                     break;
                 case "SELECT_ALL_Recipe":
                     response = selectAllRecipes(request, connection);
+                    break;
+                case "SELECT_RecipeOfDay":
+                    response = selectRecipeOfDay(request, connection);
                     break;
                 case "INSERT_USER":
                     response = insertUser(request, connection);

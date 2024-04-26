@@ -9,6 +9,7 @@ import java.sql.SQLException;
 public class MainSelectGUI extends JFrame {
     private JButton retrieveUsersButton;
     private JButton retrieveRecipesButton;
+    private JButton retrieveRecipeOfDayButton;
     private JTextArea resultTextArea;
 
     public MainSelectGUI() {
@@ -20,6 +21,7 @@ public class MainSelectGUI extends JFrame {
         // Initialize buttons
         retrieveUsersButton = new JButton("Retrieve Users");
         retrieveRecipesButton = new JButton("Retrieve Recipes");
+        retrieveRecipeOfDayButton = new JButton("Retrieve Recipes Of the Day");
 
         // Text area to display results
         resultTextArea = new JTextArea();
@@ -30,11 +32,12 @@ public class MainSelectGUI extends JFrame {
         JPanel buttonPanel = new JPanel();
         buttonPanel.add(retrieveUsersButton);
         buttonPanel.add(retrieveRecipesButton);
+        buttonPanel.add(retrieveRecipeOfDayButton);
 
         // Adding listeners to buttons
         retrieveUsersButton.addActionListener(this::retrieveUsers);
         retrieveRecipesButton.addActionListener(this::retrieveRecipes);
-
+        retrieveRecipeOfDayButton.addActionListener(this::retrieveRecipesOfDay);
         // Adding components to the frame
         add(buttonPanel, BorderLayout.NORTH);
         add(scrollPane, BorderLayout.CENTER);
@@ -49,6 +52,16 @@ public class MainSelectGUI extends JFrame {
         } catch (IOException | InterruptedException | SQLException ex) {
             ex.printStackTrace();
             resultTextArea.setText("An error occurred while retrieving users.");
+        }
+    }
+
+    private void retrieveRecipesOfDay(ActionEvent e) {
+        try {
+            String recipesInfo = SelectRecipeOfDay.retrieveRecipesOfDay();
+            resultTextArea.setText(recipesInfo);
+        } catch (IOException | InterruptedException | SQLException ex) {
+            ex.printStackTrace();
+            resultTextArea.setText("An error occurred while retrieving recipes.");
         }
     }
 
