@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10334063-c852-439c-9d0e-8d648f164919" name="Changes" comment="" />
+    <list default="true" id="10334063-c852-439c-9d0e-8d648f164919" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-city-backend/src/main/java/edu/ezip/ing1/pds/business/server/XMartCityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-city-backend/src/main/java/edu/ezip/ing1/pds/business/server/XMartCityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-city-backend/target/classes/edu/ezip/ing1/pds/business/server/XMartCityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-city-backend/target/classes/edu/ezip/ing1/pds/business/server/XMartCityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/MainSelectGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/MainSelectGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/SelectRecipeOfDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/SelectRecipeOfDay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-select-client/target/classes/edu/ezip/ing1/pds/client/MainSelectGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-select-client/target/classes/edu/ezip/ing1/pds/client/MainSelectGUI.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,46 +42,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.GuiConnexion.executor": "Run",
-    "Application.MainBackendServer.executor": "Run",
-    "Application.MainGUI.executor": "Run",
-    "Application.MainInsertClient.executor": "Run",
-    "Application.MainInsertRecipe.executor": "Run",
-    "Application.MainInsertStudent.executor": "Run",
-    "Application.MainInsertUser.executor": "Run",
-    "Application.MainRecipeGUI.executor": "Run",
-    "Application.MainSelectClient.executor": "Run",
-    "Application.MainSelectGUI.executor": "Run",
-    "Application.MainStudentGUI.executor": "Run",
-    "Application.MainUserGUI.executor": "Run",
-    "Application.UserInformationForm.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "19",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/lenovo/Desktop/sirius/prototype-ing1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GuiConnexion.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainBackendServer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainInsertClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainInsertRecipe.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainInsertStudent.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainInsertUser.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainRecipeGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainSelectClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainSelectGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainStudentGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainUserGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UserInformationForm.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lenovo/Desktop/sirius/prototype-ing1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lenovo\Desktop\sirius\prototype-ing1\xmart-insert-client\src\main\resources" />
@@ -154,8 +161,8 @@
       <list>
         <item itemvalue="Application.MainSelectGUI" />
         <item itemvalue="Application.MainBackendServer" />
-        <item itemvalue="Application.MainRecipeGUI" />
         <item itemvalue="Application.MainUserGUI" />
+        <item itemvalue="Application.MainRecipeGUI" />
         <item itemvalue="Application.MainInsertUser" />
       </list>
     </recent_temporary>
@@ -193,7 +200,8 @@
       <workItem from="1714116012863" duration="473000" />
       <workItem from="1714116548227" duration="5337000" />
       <workItem from="1714123165627" duration="350000" />
-      <workItem from="1714129482351" duration="919000" />
+      <workItem from="1714129482351" duration="3132000" />
+      <workItem from="1714133172023" duration="995000" />
     </task>
     <servers />
   </component>

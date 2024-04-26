@@ -38,6 +38,7 @@ public class MainSelectGUI extends JFrame {
         retrieveUsersButton.addActionListener(this::retrieveUsers);
         retrieveRecipesButton.addActionListener(this::retrieveRecipes);
         retrieveRecipeOfDayButton.addActionListener(this::retrieveRecipesOfDay);
+
         // Adding components to the frame
         add(buttonPanel, BorderLayout.NORTH);
         add(scrollPane, BorderLayout.CENTER);

@@ -23,8 +23,8 @@ public class XMartCityService {
         SELECT_ALL("SELECT * FROM \"ezip-ing1\".users t"),
         SELECT_ALL_Student("SELECT * FROM \"ezip-ing1\".students t"),
         SELECT_ALL_Recipe("SELECT * FROM \"ezip-ing1\".recipes t"),
-        SELECT_RecipeOfDay("\n" +
-                " SELECT * \n"+
+        SELECT_RecipeOfDay("(\n" +
+                "  SELECT * \n" +
                 "  FROM \"ezip-ing1\".recipes \n" +
                 "  WHERE breakfast = 'true'\n" +
                 "  LIMIT 1\n" +
@@ -125,8 +125,8 @@ public class XMartCityService {
 
             return new Response(request.getRequestId(), responseBody);
         } catch (Exception e) {
-            logger.error("Error executing SELECT_ALL_Recipe: {}", e.getMessage());
-            return new Response(request.getRequestId(), "Error executing SELECT_ALL query");
+            logger.error("Error executing SELECT_RecipeOfDay: {}", e.getMessage());
+            return new Response(request.getRequestId(), "Error executing SELECT_RecipeOfDay query");
         }
     }
 
