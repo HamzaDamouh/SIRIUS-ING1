@@ -1,0 +1,161 @@
+recipes:
+  - name: "Blueberry Pancakes"
+    ingredients: '["blueberries", "flour", "milk", "egg", "sugar", "baking powder"]'
+    calories: "350"
+    breakfast: "true"
+  - name: "Chicken Caesar Salad"
+    ingredients: '["chicken breast", "romaine lettuce", "croutons", "parmesan cheese", "caesar dressing"]'
+    calories: "450"
+    breakfast: "false"
+  - name: "Vegetable Stir Fry"
+    ingredients: '["broccoli", "carrot", "bell pepper", "soy sauce", "ginger", "garlic"]'
+    calories: "320"
+    breakfast: "false"
+  - name: "Banana Smoothie"
+    ingredients: '["banana", "milk", "honey", "ice", "yogurt"]'
+    calories: "280"
+    breakfast: "true"
+  - name: "Spaghetti Carbonara"
+    ingredients: '["spaghetti", "pancetta", "eggs", "parmesan cheese", "black pepper"]'
+    calories: "700"
+    breakfast: "false"
+  - name: "Mushroom Risotto"
+    ingredients: '["arborio rice", "mushrooms", "chicken stock", "white wine", "onion", "parmesan cheese"]'
+    calories: "480"
+    breakfast: "false"
+  - name: "Avocado Toast"
+    ingredients: '["avocado", "whole grain bread", "red pepper flakes", "olive oil", "salt"]'
+    calories: "300"
+    breakfast: "true"
+  - name: "Tomato Soup"
+    ingredients: '["tomato", "onion", "garlic", "vegetable stock", "cream", "basil"]'
+    calories: "250"
+    breakfast: "false"
+  - name: "Beef Tacos"
+    ingredients: '["ground beef", "taco shells", "cheddar cheese", "lettuce", "tomato", "taco sauce"]'
+    calories: "600"
+    breakfast: "false"
+  - name: "Oatmeal with Honey"
+    ingredients: '["oats", "milk", "honey", "cinnamon"]'
+    calories: "220"
+    breakfast: "true"
+  - name: "Grilled Salmon"
+    ingredients: '["salmon fillets", "lemon", "garlic", "olive oil", "dill"]'
+    calories: "520"
+    breakfast: "false"
+  - name: "Quinoa Salad"
+    ingredients: '["quinoa", "cucumber", "tomato", "feta cheese", "olives", "lemon dressing"]'
+    calories: "410"
+    breakfast: "false"
+  - name: "Lemon Chicken"
+    ingredients: '["chicken thighs", "lemon juice", "garlic", "rosemary", "olive oil"]'
+    calories: "480"
+    breakfast: "false"
+  - name: "French Toast"
+    ingredients: '["bread", "eggs", "milk", "cinnamon", "vanilla extract", "maple syrup"]'
+    calories: "310"
+    breakfast: "true"
+  - name: "Veggie Burger"
+    ingredients: '["black beans", "bread crumbs", "bell pepper", "onion", "egg", "cumin"]'
+    calories: "350"
+    breakfast: "false"
+  - name: "Pesto Pasta"
+    ingredients: '["pasta", "basil pesto", "cherry tomatoes", "pine nuts", "parmesan cheese"]'
+    calories: "580"
+    breakfast: "false"
+  - name: "Coconut Curry"
+    ingredients: '["coconut milk", "curry paste", "chicken breast", "bamboo shoots", "bell pepper", "basil"]'
+    calories: "540"
+    breakfast: "false"
+  - name: "Egg Salad Sandwich"
+    ingredients: '["eggs", "mayonnaise", "mustard", "celery", "onion", "lettuce"]'
+    calories: "360"
+    breakfast: "true"
+  - name: "Pumpkin Soup"
+    ingredients: '["pumpkin", "vegetable stock", "onion", "cream", "nutmeg"]'
+    calories: "300"
+    breakfast: "false"
+  - name: "Shrimp Tacos"
+    ingredients: '["shrimp", "cabbage slaw", "avocado", "lime", "corn tortillas"]'
+    calories: "320"
+    breakfast: "false"
+  - name: "Greek Yogurt Parfait"
+    ingredients: '["Greek yogurt", "honey", "granola", "berries"]'
+    calories: "290"
+    breakfast: "true"
+  - name: "Pad Thai"
+    ingredients: '["rice noodles", "shrimp", "tofu", "peanuts", "egg", "bean sprouts"]'
+    calories: "640"
+    breakfast: "false"
+  - name: "Chicken Tikka Masala"
+    ingredients: '["chicken", "yogurt", "tomato sauce", "cream", "masala spices"]'
+    calories: "580"
+    breakfast: "false"
+  - name: "Raspberry Cheesecake"
+    ingredients: '["cream cheese", "raspberries", "sugar", "eggs", "vanilla extract", "graham cracker crust"]'
+    calories: "450"
+    breakfast: "false"
+  - name: "Pulled Pork Sandwich"
+    ingredients: '["pork shoulder", "BBQ sauce", "onion", "garlic", "hamburger buns"]'
+    calories: "700"
+    breakfast: "false"
+  - name: "Chicken Fajitas"
+    ingredients: '["chicken breast", "bell peppers", "onion", "fajita seasoning", "flour tortillas"]'
+    calories: "460"
+    breakfast: "false"
+  - name: "Lentil Soup"
+    ingredients: '["lentils", "carrot", "celery", "tomato", "spinach", "vegetable broth"]'
+    calories: "240"
+    breakfast: "false"
+  - name: "Tuna Salad"
+    ingredients: '["canned tuna", "mayonnaise", "celery", "red onion", "lettuce"]'
+    calories: "310"
+    breakfast: "false"
+  - name: "Maple Glazed Chicken"
+    ingredients: '["chicken breast", "maple syrup", "Dijon mustard", "apple cider vinegar", "thyme"]'
+    calories: "410"
+    breakfast: "false"
+  - name: "Zucchini Bread"
+    ingredients: '["zucchini", "flour", "sugar", "eggs", "vanilla extract", "cinnamon"]'
+    calories: "360"
+    breakfast: "true"
+  - name: "Butternut Squash Risotto"
+    ingredients: '["butternut squash", "arborio rice", "chicken stock", "onion", "sage", "parmesan cheese"]'
+    calories: "475"
+    breakfast: "false"
+  - name: "Steak Tacos"
+    ingredients: '["steak", "corn tortillas", "onion", "cilantro", "lime"]'
+    calories: "400"
+    breakfast: "false"
+  - name: "Ratatouille"
+    ingredients: '["eggplant", "zucchini", "bell pepper", "tomato", "onion", "garlic"]'
+    calories: "180"
+    breakfast: "false"
+  - name: "Mango Lassi"
+    ingredients: '["mango", "yogurt", "milk", "sugar", "cardamom"]'
+    calories: "190"
+    breakfast: "true"
+  - name: "Chocolate Chip Cookies"
+    ingredients: '["flour", "butter", "sugar", "chocolate chips", "eggs", "vanilla extract"]'
+    calories: "160"
+    breakfast: "false"
+  - name: "Paella"
+    ingredients: '["rice", "chicken", "shrimp", "mussels", "chorizo", "peas"]'
+    calories: "690"
+    breakfast: "false"
+  - name: "Baked Cod"
+    ingredients: '["cod", "lemon", "parsley", "garlic", "olive oil"]'
+    calories: "270"
+    breakfast: "false"
+  - name: "Falafel Wrap"
+    ingredients: '["falafel", "tortilla wrap", "lettuce", "tomato", "tahini sauce"]'
+    calories: "550"
+    breakfast: "false"
+  - name: "Pumpkin Pie"
+    ingredients: '["pumpkin puree", "eggs", "cream", "sugar", "pie crust", "cinnamon", "nutmeg"]'
+    calories: "310"
+    breakfast: "false"
+  - name: "Chicken Noodle Soup"
+    ingredients: '["chicken breast", "noodles", "carrot", "celery", "chicken broth", "parsley"]'
+    calories: "350"
+    breakfast: "false"

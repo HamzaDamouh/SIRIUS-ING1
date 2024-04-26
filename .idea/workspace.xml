@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="10334063-c852-439c-9d0e-8d648f164919" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2ef7fxc77qPUETgij44sj88qjd4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GuiConnexion.executor": "Run",
+    "Application.MainBackendServer.executor": "Run",
+    "Application.MainGUI.executor": "Run",
+    "Application.MainInsertClient.executor": "Run",
+    "Application.MainInsertRecipe.executor": "Run",
+    "Application.MainInsertStudent.executor": "Run",
+    "Application.MainInsertUser.executor": "Run",
+    "Application.MainRecipeGUI.executor": "Run",
+    "Application.MainSelectClient.executor": "Run",
+    "Application.MainSelectGUI.executor": "Run",
+    "Application.MainStudentGUI.executor": "Run",
+    "Application.MainUserGUI.executor": "Run",
+    "Application.UserInformationForm.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "19",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/lenovo/Desktop/sirius/prototype-ing1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\Desktop\sirius\prototype-ing1\xmart-insert-client\src\main\resources" />
+      <recent name="C:\Users\lenovo\Desktop\sirius\prototype-ing1\xmart-city-business-dto\src\main\java\edu\ezip\ing1\pds\business\dto" />
+      <recent name="C:\Users\lenovo\Desktop\sirius\prototype-ing1\xmart-city-backend\src\main\java\edu\ezip\ing1\pds\business\server" />
+      <recent name="C:\Users\lenovo\Desktop\sirius\prototype-ing1\xmart-select-client\src\main\java\edu\ezip\ing1\pds\client" />
+      <recent name="C:\Users\lenovo\Desktop\sirius\prototype-ing1\frontend-gui\src\main\java\edu\ezip\ing1\pds" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MainSelectGUI">
+    <configuration name="MainBackendServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.ezip.ing1.pds.backend.MainBackendServer" />
+      <module name="xmart-zity-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ezip.ing1.pds.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainInsertUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.ezip.ing1.pds.client.MainInsertUser" />
+      <module name="xmart-insert-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ezip.ing1.pds.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainRecipeGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.ezip.ing1.pds.client.MainRecipeGUI" />
+      <module name="xmart-select-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ezip.ing1.pds.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainSelectGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.ezip.ing1.pds.client.MainSelectGUI" />
+      <module name="xmart-select-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ezip.ing1.pds.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainUserGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.ezip.ing1.pds.client.MainUserGUI" />
+      <module name="xmart-select-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ezip.ing1.pds.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainSelectGUI" />
+        <item itemvalue="Application.MainBackendServer" />
+        <item itemvalue="Application.MainRecipeGUI" />
+        <item itemvalue="Application.MainUserGUI" />
+        <item itemvalue="Application.MainInsertUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10334063-c852-439c-9d0e-8d648f164919" name="Changes" comment="" />
+      <created>1712283889606</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712283889606</updated>
+      <workItem from="1712283893705" duration="5119000" />
+      <workItem from="1712298501653" duration="5204000" />
+      <workItem from="1712303997475" duration="133000" />
+      <workItem from="1712306775076" duration="1680000" />
+      <workItem from="1712308524386" duration="4558000" />
+      <workItem from="1712320459115" duration="254000" />
+      <workItem from="1712320764309" duration="525000" />
+      <workItem from="1712321356055" duration="848000" />
+      <workItem from="1713376559794" duration="795000" />
+      <workItem from="1713405517993" duration="851000" />
+      <workItem from="1713500882626" duration="147000" />
+      <workItem from="1713775538435" duration="819000" />
+      <workItem from="1714072233332" duration="16429000" />
+      <workItem from="1714109952778" duration="1205000" />
+      <workItem from="1714116012863" duration="473000" />
+      <workItem from="1714116548227" duration="5337000" />
+      <workItem from="1714123165627" duration="350000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/SelectUser.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xmart-city-backend/src/main/java/edu/ezip/ing1/pds/backend/MainBackendServer.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

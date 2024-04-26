@@ -1,0 +1,6 @@
+edu\ezip\ing1\pds\client\InsertStudentsClientRequest.class
+edu\ezip\ing1\pds\client\InsertRecipesClientRequest.class
+edu\ezip\ing1\pds\client\InsertUsersClientRequest.class
+edu\ezip\ing1\pds\client\MainInsertUser.class
+edu\ezip\ing1\pds\client\MainInsertRecipe.class
+edu\ezip\ing1\pds\client\MainInsertStudent.class
