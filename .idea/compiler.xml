@@ -17,6 +17,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="front-end" target="19" />
       <module name="front-end-gui" target="17" />
       <module name="frontend-gui" target="19" />
     </bytecodeTargetLevel>

@@ -17,6 +17,7 @@ public class User {
     private String  age;
     private String  height;
     private String  weight;
+    private String calories;
 
 
 
@@ -24,14 +25,14 @@ public class User {
     }
     public final User build(final ResultSet resultSet)
             throws SQLException, NoSuchFieldException, IllegalAccessException {
-        setFieldsFromResulset(resultSet, "lastname", "firstname","email", "gender","age","height","weight");
+        setFieldsFromResulset(resultSet, "lastname", "firstname","email", "gender","age","height","weight","calories");
         return this;
     }
     public final PreparedStatement build(PreparedStatement preparedStatement)
             throws SQLException, NoSuchFieldException, IllegalAccessException {
-        return buildPreparedStatement(preparedStatement, lastname, firstname,email,gender,age,height,weight);
+        return buildPreparedStatement(preparedStatement, lastname, firstname,email,gender,age,height,weight,calories);
     }
-    public User(String lastname, String firstname, String email, String gender, String age, String height, String weight) {
+    public User(String lastname, String firstname, String email, String gender, String age, String height, String weight, String calories) {
         this.lastname = lastname;
         this.firstname = firstname;
         this.email = email;
@@ -39,6 +40,7 @@ public class User {
         this.age =age;
         this.height=height;
         this.weight=weight;
+        this.calories=calories;
     }
 
     public String getLastname() {
@@ -67,6 +69,10 @@ public class User {
 
     public String getWeight() {
         return weight;
+    }
+
+    public String getCalories() {
+        return calories;
     }
 
     // Setters avec les annotations @JsonProperty
@@ -106,6 +112,10 @@ public class User {
         this.weight = weight;
     }
 
+    @JsonProperty("calories")
+    public void setCalories(String calories) {
+        this.calories = calories;
+    }
 
     private void setFieldsFromResulset(final ResultSet resultSet, final String ... fieldNames )
             throws NoSuchFieldException, SQLException, IllegalAccessException {
@@ -133,6 +143,7 @@ public class User {
                 ", age='" + age + '\'' +
                 ", height='" + height + '\'' +
                 ", weight='" + weight + '\'' +
+                ", calories='" + calories + '\'' +
                 '}';
     }
 }

@@ -19,7 +19,7 @@ public class MainInsertUser {
 
     private final static String LoggingLabel = "I n s e r t e r - C l i e n t";
     private final static Logger logger = LoggerFactory.getLogger(LoggingLabel);
-    private final static String usersToBeInserted = "users-to-insert.yaml";
+    //private final static String usersToBeInserted = "users-to-insert.yaml";
     private final static String networkConfigFile = "network.yaml";
     private static final String threadName = "inserter-client";
     private static final String requestOrder = "INSERT_USER";
@@ -27,16 +27,62 @@ public class MainInsertUser {
 
     public static void main(String[] args) throws IOException, InterruptedException, SQLException {
 
-        final Users guys = ConfigLoader.loadConfig(Users.class, usersToBeInserted);
+        /*final Students guys = ConfigLoader.loadConfig(Students.class, studentsToBeInserted);
         final NetworkConfig networkConfig =  ConfigLoader.loadConfig(NetworkConfig.class, networkConfigFile);
-        logger.trace("Users loaded : {}", guys.toString());
+
+        // Logging configuration details
+        logger.trace("Students loaded : {}", guys.toString());
         logger.debug("Load Network config file : {}", networkConfig.toString());
 
+
+        // Insertion request for each student
         int birthdate = 0;
-        for(final User guy : guys.getUsers()) {
+        for(final Student guy : guys.getStudents()) {
+
             final ObjectMapper objectMapper = new ObjectMapper();
             final String jsonifiedGuy = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(guy);
-            logger.trace("User with its JSON face : {}", jsonifiedGuy);
+            logger.trace("Student with its JSON face : {}", jsonifiedGuy);
+
+            final String requestId = UUID.randomUUID().toString();
+            final Request request = new Request();
+            request.setRequestId(requestId);
+            request.setRequestOrder(requestOrder);
+            request.setRequestContent(jsonifiedGuy);
+            objectMapper.enable(SerializationFeature.WRAP_ROOT_VALUE);
+            final byte []  requestBytes = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsBytes(request);
+
+            final InsertStudentsClientRequest clientRequest = new InsertStudentsClientRequest (
+                    networkConfig,
+                    birthdate++, request, guy, requestBytes);
+            clientRequests.push(clientRequest);
+        }
+
+        while (!clientRequests.isEmpty()) {
+            final ClientRequest clientRequest = clientRequests.pop();
+            clientRequest.join();
+            final Student guy = (Student)clientRequest.getInfo();
+            logger.debug("Thread {} complete : {} {} {} --> {}",
+                    clientRequest.getThreadName(),
+                    guy.getName(), guy.getFirstname(), guy.getGroup(),
+                    clientRequest.getResult());
+        }*/
+
+        final NetworkConfig networkConfig =  ConfigLoader.loadConfig(NetworkConfig.class, networkConfigFile);
+        logger.debug("Load Network config file : {}", networkConfig.toString());
+
+        List<User> usersList = new ArrayList<>();
+        UserForm userForm = new UserForm();
+        userForm.waitForSubmission();
+        usersList.add(userForm.getUser());
+
+        Thread.sleep(1000);
+
+        for (User user : usersList){
+            // same block instead of guys.getStudent() user in usersList
+            final ObjectMapper objectMapper = new ObjectMapper();
+            final String jsonifiedGuy = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(user);
+            logger.trace("Student with its JSON face : {}", jsonifiedGuy);
+
             final String requestId = UUID.randomUUID().toString();
             final Request request = new Request();
             request.setRequestId(requestId);
@@ -47,17 +93,18 @@ public class MainInsertUser {
 
             final InsertUsersClientRequest clientRequest = new InsertUsersClientRequest (
                     networkConfig,
-                    birthdate++, request, guy, requestBytes);
+                    0, request, user, requestBytes);
             clientRequests.push(clientRequest);
+
         }
 
         while (!clientRequests.isEmpty()) {
             final ClientRequest clientRequest = clientRequests.pop();
             clientRequest.join();
-            final User guy = (User)clientRequest.getInfo();
+            final User user = (User)clientRequest.getInfo();
             logger.debug("Thread {} complete : {} {} {} --> {}",
                     clientRequest.getThreadName(),
-                    guy.getFirstname(), guy.getLastname(), guy.getEmail(),
+                    user.getFirstname(), user.getLastname(), user.getEmail(),
                     clientRequest.getResult());
         }
     }

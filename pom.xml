@@ -17,6 +17,7 @@
         <module>xmart-select-client</module>
         <module>rdbms-connection-pool</module>
         <module>logging-utils</module>
+
     </modules>
 
 

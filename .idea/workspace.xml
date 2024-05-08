@@ -5,12 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10334063-c852-439c-9d0e-8d648f164919" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/xmart-insert-client/src/main/java/edu/ezip/ing1/pds/client/UserForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/MainCaloriesForUserGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/SelectGG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/SelectGGClientRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f29ad0d6-8951-4629-a782-3459cbcc8ab6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f29ad0d6-8951-4629-a782-3459cbcc8ab6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmart-city-backend/src/main/java/edu/ezip/ing1/pds/business/server/XMartCityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-city-backend/src/main/java/edu/ezip/ing1/pds/business/server/XMartCityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-city-backend/target/classes/edu/ezip/ing1/pds/business/server/XMartCityService$Queries.class" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-city-backend/target/classes/edu/ezip/ing1/pds/business/server/XMartCityService$Queries.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmart-city-backend/target/classes/edu/ezip/ing1/pds/business/server/XMartCityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-city-backend/target/classes/edu/ezip/ing1/pds/business/server/XMartCityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-city-business-dto/src/main/java/edu/ezip/ing1/pds/business/dto/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-city-business-dto/src/main/java/edu/ezip/ing1/pds/business/dto/Students.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-city-business-dto/src/main/java/edu/ezip/ing1/pds/business/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-city-business-dto/src/main/java/edu/ezip/ing1/pds/business/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-city-business-dto/target/classes/edu/ezip/ing1/pds/business/dto/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-city-business-dto/target/classes/edu/ezip/ing1/pds/business/dto/Students.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-city-business-dto/target/classes/edu/ezip/ing1/pds/business/dto/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-city-business-dto/target/classes/edu/ezip/ing1/pds/business/dto/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-city-client-commons/src/main/java/edu/ezip/ing1/pds/client/commons/ClientRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-city-client-commons/src/main/java/edu/ezip/ing1/pds/client/commons/ClientRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-city-client-commons/target/classes/edu/ezip/ing1/pds/client/commons/ClientRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-city-client-commons/target/classes/edu/ezip/ing1/pds/client/commons/ClientRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-insert-client/src/main/java/edu/ezip/ing1/pds/client/InsertStudentsClientRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-insert-client/src/main/java/edu/ezip/ing1/pds/client/MainInsertStudent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-insert-client/src/main/java/edu/ezip/ing1/pds/client/MainInsertUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-insert-client/src/main/java/edu/ezip/ing1/pds/client/MainInsertUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-insert-client/target/classes/edu/ezip/ing1/pds/client/InsertRecipesClientRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-insert-client/target/classes/edu/ezip/ing1/pds/client/InsertRecipesClientRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-insert-client/target/classes/edu/ezip/ing1/pds/client/InsertStudentsClientRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-insert-client/target/classes/edu/ezip/ing1/pds/client/InsertStudentsClientRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-insert-client/target/classes/edu/ezip/ing1/pds/client/InsertUsersClientRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-insert-client/target/classes/edu/ezip/ing1/pds/client/InsertUsersClientRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-insert-client/target/classes/edu/ezip/ing1/pds/client/MainInsertRecipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-insert-client/target/classes/edu/ezip/ing1/pds/client/MainInsertRecipe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-insert-client/target/classes/edu/ezip/ing1/pds/client/MainInsertStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-insert-client/target/classes/edu/ezip/ing1/pds/client/MainInsertStudent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-insert-client/target/classes/edu/ezip/ing1/pds/client/MainInsertUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-insert-client/target/classes/edu/ezip/ing1/pds/client/MainInsertUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/MainSelectGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/MainSelectGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/SelectRecipeOfDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/SelectRecipeOfDay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/MainStudentGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/SelectAllStudentsClientRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/SelectAllUsersClientRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/SelectAllUsersClientRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/SelectStudent.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/xmart-select-client/target/classes/edu/ezip/ing1/pds/client/MainSelectGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-select-client/target/classes/edu/ezip/ing1/pds/client/MainSelectGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-select-client/target/classes/edu/ezip/ing1/pds/client/MainStudentGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-select-client/target/classes/edu/ezip/ing1/pds/client/MainStudentGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-select-client/target/classes/edu/ezip/ing1/pds/client/MainStudentGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-select-client/target/classes/edu/ezip/ing1/pds/client/SelectAllStudentsClientRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-select-client/target/classes/edu/ezip/ing1/pds/client/SelectAllUsersClientRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/xmart-select-client/target/classes/edu/ezip/ing1/pds/client/SelectAllUsersClientRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmart-select-client/target/classes/edu/ezip/ing1/pds/client/SelectStudent.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +81,9 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.GuiConnexion.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.MainBackendServer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainCaloriesForUserGUI.executor&quot;: &quot;Run&quot;,
     &quot;Application.MainGUI.executor&quot;: &quot;Run&quot;,
     &quot;Application.MainInsertClient.executor&quot;: &quot;Run&quot;,
     &quot;Application.MainInsertRecipe.executor&quot;: &quot;Run&quot;,
@@ -56,10 +94,12 @@
     &quot;Application.MainSelectGUI.executor&quot;: &quot;Run&quot;,
     &quot;Application.MainStudentGUI.executor&quot;: &quot;Run&quot;,
     &quot;Application.MainUserGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NutritionApp.executor&quot;: &quot;Run&quot;,
     &quot;Application.UserInformationForm.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
@@ -73,7 +113,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -105,9 +145,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainInsertUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.ezip.ing1.pds.client.MainInsertUser" />
-      <module name="xmart-insert-client" />
+    <configuration name="MainCaloriesForUserGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.ezip.ing1.pds.client.MainCaloriesForUserGUI" />
+      <module name="xmart-select-client" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="edu.ezip.ing1.pds.client.*" />
@@ -118,12 +158,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainRecipeGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.ezip.ing1.pds.client.MainRecipeGUI" />
-      <module name="xmart-select-client" />
+    <configuration name="MainInsertUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.ezip.ing1.pds.client.MainInsertUser" />
+      <module name="xmart-insert-client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.ezip.ing1.pds.client.*" />
+          <option name="PATTERN" value="edu.ezip.ing1.pds.client.SelectCaloriesForUserRequest" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,7 +176,7 @@
       <module name="xmart-select-client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.ezip.ing1.pds.client.*" />
+          <option name="PATTERN" value="edu.ezip.ing1.pds.client.SelectCaloriesForUserRequest" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,7 +189,7 @@
       <module name="xmart-select-client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.ezip.ing1.pds.client.*" />
+          <option name="PATTERN" value="edu.ezip.ing1.pds.client.SelectCaloriesForUserRequest" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,17 +201,17 @@
       <list>
         <item itemvalue="Application.MainSelectGUI" />
         <item itemvalue="Application.MainBackendServer" />
-        <item itemvalue="Application.MainUserGUI" />
-        <item itemvalue="Application.MainRecipeGUI" />
+        <item itemvalue="Application.MainCaloriesForUserGUI" />
         <item itemvalue="Application.MainInsertUser" />
+        <item itemvalue="Application.MainUserGUI" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
       </set>
     </attachedChunks>
   </component>
@@ -201,7 +241,16 @@
       <workItem from="1714116548227" duration="5337000" />
       <workItem from="1714123165627" duration="350000" />
       <workItem from="1714129482351" duration="3132000" />
-      <workItem from="1714133172023" duration="995000" />
+      <workItem from="1714133172023" duration="6609000" />
+      <workItem from="1714642641136" duration="196000" />
+      <workItem from="1714653431460" duration="352000" />
+      <workItem from="1714821255541" duration="2586000" />
+      <workItem from="1714823907737" duration="4545000" />
+      <workItem from="1714997012078" duration="413000" />
+      <workItem from="1715100032565" duration="9611000" />
+      <workItem from="1715189946095" duration="3424000" />
+      <workItem from="1715193484661" duration="535000" />
+      <workItem from="1715194145835" duration="4662000" />
     </task>
     <servers />
   </component>
@@ -234,15 +283,8 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xmart-select-client/src/main/java/edu/ezip/ing1/pds/client/SelectUser.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

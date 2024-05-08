@@ -36,8 +36,8 @@ public class XMartCityService {
                 "  WHERE breakfast != 'true'\n" +
                 "  LIMIT 2\n" +
                 ");"),
-        INSERT_USER("INSERT into \"ezip-ing1\".users (\"lastname\", \"firstname\", \"email\", \"gender\", \"age\", \"height\", \"weight\") values (?, ?, ?,?, ?, ?, ?)"),
-        INSERT_STUDENT("INSERT into \"ezip-ing1\".students (\"name\", \"firstname\", \"group\") values (?, ?, ?)"),
+        SELECT_GG("SELECT * FROM \"ezip-ing1\".users WHERE email = 'gg@gg.gg'"),
+        INSERT_USER("INSERT into \"ezip-ing1\".users (\"lastname\", \"firstname\", \"email\", \"gender\", \"age\", \"height\", \"weight\",  \"calories\") values (?, ?, ?,?, ?, ?, ?, ?)"),
         INSERT_RECIPE("INSERT into \"ezip-ing1\".recipes (\"name\", \"ingredients\", \"calories\",\"breakfast\") values (?, ?, ?, ?)");
 
         private final String query;
@@ -57,29 +57,7 @@ public class XMartCityService {
 
     private XMartCityService() {}
 
-    public Response selectAllStudents(final Request request, final Connection connection) {
-        try {
-            PreparedStatement selectStatement = connection.prepareStatement(Queries.SELECT_ALL_Student.query);
-            ResultSet resultSet = selectStatement.executeQuery();
 
-            Students students = new Students();
-
-            while (resultSet.next()) {
-                Student student = new Student();
-                student.build(resultSet);
-                students.add(student);
-            }
-
-            // Mapper users en JSON
-            ObjectMapper objectMapper = new ObjectMapper();
-            String responseBody = objectMapper.writeValueAsString(students);
-
-            return new Response(request.getRequestId(), responseBody);
-        } catch (Exception e) {
-            logger.error("Error executing SELECT_ALL_Student: {}", e.getMessage());
-            return new Response(request.getRequestId(), "Error executing SELECT_ALL query");
-        }
-    }
     public Response selectAllRecipes(final Request request, final Connection connection) {
         try {
             PreparedStatement selectStatement = connection.prepareStatement(Queries.SELECT_ALL_Recipe.query);
@@ -105,6 +83,53 @@ public class XMartCityService {
         }
     }
 
+    public Response selectGG(final Request request, final Connection connection){
+        /*try {
+            String requestBody = request.getRequestBody();
+            ObjectMapper objectMapper = new ObjectMapper();
+            User user = objectMapper.readValue(requestBody, User.class);
+
+            PreparedStatement selectStatement = connection.prepareStatement(Queries.SELECT_GG.query);
+            selectStatement.setString(1, user.getEmail());
+            ResultSet resultSet = selectStatement.executeQuery();
+
+            Users users = new Users();
+            while (resultSet.next()) {
+                User userResult = new User();
+                userResult.setCalories(String.valueOf(resultSet.getInt("calories")));
+                users.add(userResult);
+            }
+
+            String responseBody = objectMapper.writeValueAsString(users);
+            return new Response(request.getRequestId(), responseBody);
+        } catch (Exception e) {
+            logger.error("Error executing SELECT_GG: {}", e.getMessage());
+            return new Response(request.getRequestId(), "Error executing SELECT_GG query");
+        }*/
+
+        try {
+            PreparedStatement selectStatement = connection.prepareStatement(Queries.SELECT_GG.query);
+            ResultSet resultSet = selectStatement.executeQuery();
+
+            Users users = new Users();
+
+            while (resultSet.next()) {
+                User user = new User();
+                user.build(resultSet);
+                users.add(user);
+            }
+
+            // Mapper users en JSON
+            ObjectMapper objectMapper = new ObjectMapper();
+            String responseBody = objectMapper.writeValueAsString(users);
+
+            return new Response(request.getRequestId(), responseBody);
+        } catch (Exception e) {
+            logger.error("Error executing SELECT_GG: {}", e.getMessage());
+            return new Response(request.getRequestId(), "Error executing SELECT_GG query");
+        }
+
+    }
     public Response selectRecipeOfDay(final Request request, final Connection connection){
         try {
             PreparedStatement selectStatement = connection.prepareStatement(Queries.SELECT_RecipeOfDay.query);
@@ -167,6 +192,7 @@ public class XMartCityService {
             insertStatement.setString(5, user.getAge());
             insertStatement.setString(6, user.getHeight());
             insertStatement.setString(7, user.getWeight());
+            insertStatement.setString(8, user.getCalories());
 
             int rowsAffected = insertStatement.executeUpdate();
 
@@ -180,28 +206,7 @@ public class XMartCityService {
             return new Response(request.getRequestId(), "Error executing INSERT_USER query");
         }
     }
-    public Response insertStudent(final Request request, final Connection connection) {
-        try {
-            String requestBody = request.getRequestBody();
-            ObjectMapper objectMapper = new ObjectMapper();
-            Student student  = objectMapper.readValue(requestBody, Student.class);
-            PreparedStatement insertStatement = connection.prepareStatement(Queries.INSERT_STUDENT.query);
-            insertStatement.setString(1, student.getName());
-            insertStatement.setString(2, student.getFirstname());
-            insertStatement.setString(3, student.getGroup());
 
-            int rowsAffected = insertStatement.executeUpdate();
-
-            if (rowsAffected > 0) {
-                return new Response(request.getRequestId(),String.format("{\"student_id\": %d}", rowsAffected));
-            } else {
-                return new Response(request.getRequestId(), "Failed to insert user");
-            }
-        } catch (SQLException | IOException e) {
-            logger.error("Error executing INSERT_STUDENT query: {}", e.getMessage());
-            return new Response(request.getRequestId(), "Error executing INSERT_STUDENT  query");
-        }
-    }
     public Response insertRecipe(final Request request, final Connection connection) {
         try {
             String requestBody = request.getRequestBody();
@@ -237,20 +242,17 @@ public class XMartCityService {
                 case "SELECT_ALL_USERS":
                     response = selectAllUsers(request, connection);
                     break;
-                case "SELECT_ALL_Student":
-                    response = selectAllStudents(request, connection);
-                    break;
                 case "SELECT_ALL_Recipe":
                     response = selectAllRecipes(request, connection);
                     break;
                 case "SELECT_RecipeOfDay":
                     response = selectRecipeOfDay(request, connection);
                     break;
+                case "SELECT_GG":
+                    response = selectGG(request, connection);
+                    break;
                 case "INSERT_USER":
                     response = insertUser(request, connection);
-                    break;
-                case "INSERT_STUDENT":
-                    response = insertStudent(request, connection);
                     break;
                 case "INSERT_RECIPE":
                     response = insertRecipe(request, connection);

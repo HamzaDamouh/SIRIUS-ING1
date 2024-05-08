@@ -10,6 +10,7 @@ public class MainSelectGUI extends JFrame {
     private JButton retrieveUsersButton;
     private JButton retrieveRecipesButton;
     private JButton retrieveRecipeOfDayButton;
+    private JButton retrieveGGButton;
     private JTextArea resultTextArea;
 
     public MainSelectGUI() {
@@ -22,6 +23,8 @@ public class MainSelectGUI extends JFrame {
         retrieveUsersButton = new JButton("Retrieve Users");
         retrieveRecipesButton = new JButton("Retrieve Recipes");
         retrieveRecipeOfDayButton = new JButton("Retrieve Recipes Of the Day");
+        retrieveGGButton = new JButton("Retrieve GG");
+
 
         // Text area to display results
         resultTextArea = new JTextArea();
@@ -33,11 +36,15 @@ public class MainSelectGUI extends JFrame {
         buttonPanel.add(retrieveUsersButton);
         buttonPanel.add(retrieveRecipesButton);
         buttonPanel.add(retrieveRecipeOfDayButton);
+        buttonPanel.add(retrieveGGButton);
+
 
         // Adding listeners to buttons
         retrieveUsersButton.addActionListener(this::retrieveUsers);
         retrieveRecipesButton.addActionListener(this::retrieveRecipes);
         retrieveRecipeOfDayButton.addActionListener(this::retrieveRecipesOfDay);
+        retrieveGGButton.addActionListener(this::retrieveGG);
+
 
         // Adding components to the frame
         add(buttonPanel, BorderLayout.NORTH);
@@ -75,6 +82,17 @@ public class MainSelectGUI extends JFrame {
             resultTextArea.setText("An error occurred while retrieving recipes.");
         }
     }
+
+    private void retrieveGG(ActionEvent e) {
+        try {
+            String usersInfo = SelectGG.retrieveGG();
+            resultTextArea.setText(usersInfo);
+        } catch (IOException | InterruptedException | SQLException ex) {
+            ex.printStackTrace();
+            resultTextArea.setText("An error occurred while retrieving users.");
+        }
+    }
+
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(MainSelectGUI::new);
